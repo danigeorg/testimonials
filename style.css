@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.pic {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+   
+}
+
+.main {
+    margin: 20px;
+    padding: 20px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 20%; /* Flexible sizing to help wrap */
+    max-width: 300px; /* Limits card width */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures equal spacing */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+/* For phones: 2 cards per row */
+@media (max-width: 600px) {
+    .main {
+        flex: 1 1 45%; /* Two cards in a row */
+    }
+}
+
+/* For tablets: 3 cards per row */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .main {
+        flex: 1 1 30%; /* Three cards in a row */
+    }
+}
+
+/* For larger screens: 6 cards per row */
+@media (min-width: 1025px) {
+    .main {
+        flex: 1 1 15%; /* Six cards in a row */
+    }
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* add */
